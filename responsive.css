@@ -1,9 +1,404 @@
 /* Responsive Design – Luxury Executive Theme */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* ===== EXTRA SMALL (phones, 320px–480px) ===== */
+@media only screen and (max-width: 480px) {
+    /* Header */
     .header-container {
         padding: 0 1rem;
+    }
+    
+    .logo-text {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+    
+    .mobile-menu-btn .bar {
+        width: 24px;
+        height: 2px;
+    }
+
+    /* Navigation Overlay */
+    .executive-nav ul {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        padding: 1.5rem 1.2rem;
+        gap: 1rem;
+        display: none;
+        z-index: 999;
+        border-top: 2px solid var(--gold);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+        max-height: calc(100vh - 64px);
+        overflow-y: auto;
+    }
+    
+    .executive-nav.active ul {
+        display: flex;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 0.6rem 0;
+        display: block;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+    }
+    
+    .nav-link::before {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 5rem 1rem 2.5rem;
+        min-height: auto;
+    }
+    
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .hero-title .title-line {
+        font-size: 1.6rem !important;
+    }
+    .hero-title .title-line:first-child {
+        font-size: 1.4rem !important;
+    }
+    .hero-title .title-line.gold {
+        font-size: 2.2rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-visual {
+        height: 150px;
+        order: -1;
+    }
+    
+    .hero-logo-display {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .initials {
+        font-size: 2.4rem;
+        letter-spacing: 3px;
+        padding-left: 3px;
+    }
+    
+    .gold-ring {
+        border-width: 1.5px;
+    }
+    
+    .cta-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        width: 100%;
+    }
+    
+    .gold-btn {
+        min-width: 100%;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.85rem;
+        justify-content: center;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+
+    /* Sections */
+    .section {
+        padding: 2.5rem 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .title-underline {
+        width: 50px;
+    }
+
+    /* Journey */
+    .journey-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .journey-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .journey-text .hero-subtext {
+        font-size: 1rem;
+        padding-left: 1rem;
+        border-left-width: 2px;
+    }
+    
+    .journey-text p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    .image-frame {
+        padding: 4px;
+    }
+
+    /* Ventures */
+    .ventures-container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    
+    .venture-card {
+        padding: 1.5rem;
+    }
+    
+    .venture-icon {
+        font-size: 2.2rem;
+    }
+    
+    .venture-title {
+        font-size: 1.2rem;
+    }
+    
+    .venture-desc {
+        font-size: 0.9rem;
+    }
+
+    /* Achievements */
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    
+    .achievement-card {
+        height: 200px;
+    }
+
+    /* Expertise */
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    
+    .expertise-card {
+        padding: 1.5rem;
+    }
+    
+    .expertise-icon {
+        font-size: 2.2rem;
+    }
+
+    /* Multi CTA */
+    .multi-cta-container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .cta-box {
+        padding: 1.8rem 1.2rem;
+    }
+    
+    .cta-box h3 {
+        font-size: 1.1rem;
+    }
+    
+    .cta-box p {
+        font-size: 0.9rem;
+    }
+
+    /* Contact */
+    .contact-title {
+        font-size: 1.6rem;
+    }
+    
+    .contact-visual-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .contact-visual-item {
+        padding: 1rem 1.2rem;
+    }
+    
+    .contact-icon {
+        font-size: 1.5rem;
+        margin-right: 0.8rem;
+    }
+    
+    .contact-details h4 {
+        font-size: 0.95rem;
+    }
+    
+    .contact-details p {
+        font-size: 0.8rem;
+    }
+
+    /* Timeline */
+    .timeline {
+        padding-left: 0;
+    }
+    
+    .timeline-line {
+        left: 16px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 48px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+        margin-bottom: 2.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -8px !important;
+        right: auto !important;
+        width: 14px;
+        height: 14px;
+        top: 6px;
+    }
+    
+    .timeline-date {
+        font-size: 0.9rem;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Quote */
+    .quote-container {
+        padding: 2rem 1.2rem;
+    }
+    
+    .quote-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    .quote-icon {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .quote-author {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .author-line {
+        width: 40px;
+    }
+    
+    .quote-author p {
+        font-size: 1rem;
+    }
+
+    /* Map */
+    .map-container {
+        height: 200px;
+    }
+    
+    .map-overlay {
+        top: 10px;
+        left: 10px;
+        padding: 0.6rem 1rem;
+    }
+    
+    .map-overlay h3 {
+        font-size: 0.9rem;
+    }
+    
+    .map-overlay p {
+        font-size: 0.75rem;
+    }
+    
+    .location-pin {
+        font-size: 2.2rem;
+    }
+    
+    .map-coordinates {
+        font-size: 0.6rem;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* Footer */
+    .executive-footer {
+        padding: 2rem 1rem;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.2rem;
+    }
+    
+    .footer-text p {
+        font-size: 0.75rem;
+    }
+    
+    .footer-tagline {
+        font-size: 0.7rem;
+    }
+    
+    .footer-gold-ornament {
+        gap: 0.6rem;
+    }
+    
+    .gold-circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* WhatsApp */
+    .whatsapp-float {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .float-pulse {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* Achievement CTA */
+    .achievements-cta {
+        margin-top: 2.5rem;
+    }
+    
+    .achievements-cta .gold-btn {
+        min-width: 100%;
+    }
+}
+
+/* ===== SMALL (phones, 481px–600px) ===== */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .header-container {
+        padding: 0 1.2rem;
     }
     
     .logo-text {
@@ -12,42 +407,39 @@
     
     .executive-nav ul {
         position: fixed;
-        top: 70px;
+        top: 68px;
         left: 0;
         width: 100%;
         background: rgba(10, 10, 10, 0.98);
         flex-direction: column;
-        padding: 2rem 1.5rem;
+        padding: 1.8rem 1.5rem;
         gap: 1.2rem;
         display: none;
-        z-index: 1000;
+        z-index: 999;
         border-top: 2px solid var(--gold);
         box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+        max-height: calc(100vh - 68px);
+        overflow-y: auto;
     }
     
     .executive-nav.active ul {
         display: flex;
     }
     
-    .mobile-menu-btn {
-        display: flex;
+    .nav-link {
+        font-size: 0.95rem;
+        padding: 0.6rem 0;
+        display: block;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.06);
     }
     
-    h1 {
-        font-size: 2.2rem;
+    .nav-link::before {
+        display: none;
     }
-    h2 {
-        font-size: 2rem;
-    }
-    .hero-title .title-line {
-        font-size: 2rem !important;
-    }
-    .hero-title .title-line.gold {
-        font-size: 2.6rem !important;
-    }
-    
+
     .hero-section {
-        padding: 6rem 1rem 3rem;
+        padding: 6rem 1.2rem 3rem;
+        min-height: auto;
     }
     
     .hero-grid {
@@ -56,36 +448,50 @@
         text-align: center;
     }
     
+    .hero-title .title-line {
+        font-size: 1.8rem !important;
+    }
+    .hero-title .title-line:first-child {
+        font-size: 1.5rem !important;
+    }
+    .hero-title .title-line.gold {
+        font-size: 2.4rem !important;
+    }
+    
     .hero-visual {
-        height: 200px;
+        height: 170px;
         order: -1;
     }
     
     .hero-logo-display {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
+    
     .initials {
-        font-size: 3rem;
+        font-size: 2.8rem;
         letter-spacing: 4px;
-    }
-    .gold-ring {
-        border-width: 1.5px;
     }
     
     .cta-container {
-        justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
-    .gold-btn {
-        min-width: 140px;
-        padding: 0.7rem 1.5rem;
-        font-size: 0.9rem;
+        gap: 0.8rem;
     }
     
+    .gold-btn {
+        min-width: 80%;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+
     .section {
-        padding: 3rem 1rem;
+        padding: 3rem 1.2rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
     }
     
     .journey-container {
@@ -94,12 +500,16 @@
     }
     
     .journey-text h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .ventures-container,
     .achievements-grid,
-    .expertise-grid,
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
     .multi-cta-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -110,30 +520,23 @@
         gap: 1rem;
     }
     
+    .timeline-line {
+        left: 20px;
+    }
+    
     .timeline-item {
         width: 100%;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        padding-left: 40px !important;
+        padding-left: 50px !important;
         padding-right: 0 !important;
         text-align: left !important;
+        margin-bottom: 2.8rem;
     }
     
     .timeline-item::before {
         left: -8px !important;
         right: auto !important;
-    }
-    
-    .timeline-line {
-        left: 20px;
-    }
-    
-    .quote-container {
-        padding: 2rem 1.5rem;
-    }
-    
-    .quote-text {
-        font-size: 1.2rem;
     }
     
     .map-container {
@@ -147,36 +550,61 @@
     }
     
     .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-        bottom: 1.5rem;
-        right: 1.5rem;
+        width: 52px;
+        height: 52px;
+        font-size: 1.6rem;
     }
 }
 
-/* Small devices (portrait tablets, 600px to 768px) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+/* ===== MEDIUM (tablets, 601px–768px) ===== */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
     .header-container {
         padding: 0 1.5rem;
     }
     
     .logo-text {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .executive-nav ul {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        padding: 2rem 2rem;
         gap: 1.2rem;
+        display: none;
+        z-index: 999;
+        border-top: 2px solid var(--gold);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+        max-height: calc(100vh - 72px);
+        overflow-y: auto;
     }
     
-    h1 {
-        font-size: 2.6rem;
+    .executive-nav.active ul {
+        display: flex;
     }
-    .hero-title .title-line {
-        font-size: 2.2rem !important;
+    
+    .mobile-menu-btn {
+        display: flex !important;
     }
-    .hero-title .title-line.gold {
-        font-size: 3rem !important;
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.6rem 0;
+        display: block;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.06);
+    }
+    
+    .nav-link::before {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 7rem 1.5rem 3.5rem;
+        min-height: auto;
     }
     
     .hero-grid {
@@ -185,22 +613,152 @@
         text-align: center;
     }
     
+    .hero-title .title-line {
+        font-size: 2.2rem !important;
+    }
+    .hero-title .title-line:first-child {
+        font-size: 1.8rem !important;
+    }
+    .hero-title .title-line.gold {
+        font-size: 2.8rem !important;
+    }
+    
     .hero-visual {
-        height: 250px;
+        height: 200px;
         order: -1;
+    }
+    
+    .hero-logo-display {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .initials {
+        font-size: 3.4rem;
+        letter-spacing: 5px;
     }
     
     .cta-container {
         justify-content: center;
+        flex-wrap: wrap;
     }
     
+    .gold-btn {
+        min-width: 200px;
+    }
+
     .section {
         padding: 4rem 1.5rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2.2rem;
     }
     
     .journey-container {
         grid-template-columns: 1fr;
         gap: 2.5rem;
+    }
+    
+    .journey-text h1 {
+        font-size: 2rem;
+    }
+    
+    .ventures-container,
+    .achievements-grid,
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem;
+    }
+    
+    .multi-cta-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .contact-visual-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .timeline-line {
+        left: 24px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 54px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+    
+    .timeline-item::before {
+        left: -8px !important;
+        right: auto !important;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+}
+
+/* ===== LARGE TABLETS / SMALL LAPTOPS (769px–992px) ===== */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .header-container {
+        padding: 0 2rem;
+    }
+    
+    .executive-nav ul {
+        gap: 1.2rem;
+    }
+    
+    .nav-link {
+        font-size: 0.85rem;
+    }
+    
+    .hero-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    
+    .hero-title .title-line {
+        font-size: 2.6rem !important;
+    }
+    .hero-title .title-line:first-child {
+        font-size: 2rem !important;
+    }
+    .hero-title .title-line.gold {
+        font-size: 3.2rem !important;
+    }
+    
+    .hero-visual {
+        height: 300px;
+    }
+    
+    .hero-logo-display {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .initials {
+        font-size: 4.2rem;
+    }
+    
+    .section {
+        padding: 5rem 2rem;
+    }
+    
+    .journey-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
     }
     
     .ventures-container,
@@ -211,75 +769,8 @@
     }
     
     .multi-cta-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .contact-visual-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .timeline-item {
-        width: 100%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 50px !important;
-        text-align: left !important;
-    }
-    
-    .timeline-item::before {
-        left: -8px !important;
-        right: auto !important;
-    }
-    
-    .timeline-line {
-        left: 25px;
-    }
-    
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px to 992px) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    .header-container {
-        padding: 0 2rem;
-    }
-    
-    .executive-nav ul {
-        gap: 1.5rem;
-    }
-    
-    h1 {
-        font-size: 3rem;
-    }
-    .hero-title .title-line.gold {
-        font-size: 3.2rem;
-    }
-    
-    .hero-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-    }
-    
-    .section {
-        padding: 5rem 2rem;
-    }
-    
-    .journey-container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-    
-    .ventures-container,
-    .achievements-grid,
-    .expertise-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .multi-cta-container {
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
     
     .contact-visual-grid {
@@ -291,14 +782,7 @@
     }
 }
 
-/* Large devices (laptops, 992px to 1200px) – 3 columns already set in CSS */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    /* Already using 3 columns in style.css */
-}
-
-/* Extra large devices (1200px and up) – default 3 columns */
-
-/* Touch device optimizations */
+/* ===== TOUCH DEVICE OPTIMIZATIONS ===== */
 @media (hover: none) and (pointer: coarse) {
     .venture-card:hover,
     .achievement-card:hover,
@@ -311,9 +795,27 @@
     .gold-btn:hover {
         transform: none !important;
     }
+    
+    /* Larger touch targets */
+    .nav-link,
+    .gold-btn,
+    .venture-card,
+    .contact-visual-item,
+    .mobile-menu-btn {
+        touch-action: manipulation;
+    }
+    
+    .gold-btn {
+        padding: 0.9rem 2rem;
+        min-height: 48px;
+    }
+    
+    .contact-visual-item {
+        min-height: 56px;
+    }
 }
 
-/* High contrast */
+/* ===== HIGH CONTRAST ===== */
 @media (prefers-contrast: high) {
     :root {
         --gold: #FFD700;
@@ -321,7 +823,7 @@
     }
 }
 
-/* Reduced motion */
+/* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -341,7 +843,7 @@
     }
 }
 
-/* Print */
+/* ===== PRINT ===== */
 @media print {
     .whatsapp-float,
     .executive-header,
