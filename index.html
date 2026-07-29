@@ -18,19 +18,19 @@
     </div>
 
     <!-- Floating WhatsApp Button (kept) -->
-    <a href="https://wa.me/1758742415" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <a href="https://wa.me/1758742415" class="whatsapp-float" target="_blank" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <div class="float-pulse"></div>
     </a>
 
     <!-- Header with Luxury Navigation -->
-    <header class="executive-header">
+    <header class="executive-header" role="banner">
         <div class="header-container">
             <div class="logo">
                 <span class="logo-text gold">MASUD BIN FARUK</span>
                 <div class="logo-line gold-line"></div>
             </div>
-            <nav class="executive-nav">
+            <nav class="executive-nav" role="navigation" aria-label="Main navigation">
                 <ul>
                     <li><a href="#home" class="nav-link active"><span>Home</span></a></li>
                     <li><a href="#journey" class="nav-link"><span>My Journey</span></a></li>
@@ -41,7 +41,7 @@
                     <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu-btn">
+            <div class="mobile-menu-btn" role="button" aria-label="Toggle navigation menu" tabindex="0" aria-expanded="false">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -81,14 +81,14 @@
             </div>
         </section>
 
-        <!-- Journey Section (fixed positioning – no scroll‑reveal movement) -->
+        <!-- Journey Section -->
         <section id="journey" class="section journey-section">
             <div class="section-title">
                 <h2>MY JOURNEY</h2>
                 <div class="title-underline gold-line"></div>
             </div>
             <div class="journey-container">
-                <div class="journey-text">
+                <div class="journey-text scroll-reveal">
                     <h1 class="gold">Execution Over Comfort. Systems Over Excuses.</h1>
                     <p class="hero-subtext">
                         This is Masud Bin Faruk — an Entrepreneur who builds scalable digital platforms through discipline, risk, and relentless execution.
@@ -98,7 +98,7 @@
                     <p>As a Computer Science and Engineering (CSE) student, I identified where true leverage exists: technology. This realization led to the creation of my IT firm and later my EdTech platform — my two core businesses — where systems, not inventory, drive sustainable growth.</p>
                     <p>Today, I focus on building performance-driven digital and IT solutions that scale under pressure. I execute with ownership and intent—because in business and technology, results are the only metric that matter.</p>
                 </div>
-                <div class="journey-image">
+                <div class="journey-image scroll-reveal">
                     <div class="image-frame gold-border">
                         <img src="masud.png" alt="Masud Bin Faruk">
                         <div class="image-glow gold-glow"></div>
@@ -170,7 +170,7 @@
             </div>
         </section>
 
-        <!-- Achievements Section (replaces Portfolio) -->
+        <!-- Achievements Section -->
         <section id="achievements" class="section achievements-section">
             <div class="section-title">
                 <h2>ACHIEVEMENTS</h2>
@@ -266,7 +266,7 @@
             </div>
         </section>
 
-        <!-- Expertise Section (formerly Skills) -->
+        <!-- Expertise Section -->
         <section id="expertise" class="section expertise-section">
             <div class="section-title">
                 <h2>EXPERTISE</h2>
@@ -385,12 +385,12 @@
             </div>
         </section>
 
-        <!-- Quote Section (kept but styled elegantly) -->
+        <!-- Quote Section -->
         <section class="section quote-section">
             <div class="quote-container gold-border">
                 <div class="quote-icon gold"><i class="fas fa-quote-left"></i></div>
                 <blockquote class="quote-text">
-                    "Entrepreneurship isn’t about following the crowd—it’s about creating what others can’t yet see. 
+                    "Entrepreneurship isn't about following the crowd—it's about creating what others can't yet see. 
                     Every challenge you face is a stepping stone, and every risk you take paints the path to legacy. 
                     Build boldly, execute relentlessly, and let your vision speak louder than your fears."
                 </blockquote>
@@ -401,7 +401,7 @@
             </div>
         </section>
 
-        <!-- Map Section (kept with gold theme) -->
+        <!-- Map Section -->
         <section class="section map-section">
             <div class="section-title">
                 <h2>LOCATION</h2>
@@ -425,7 +425,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="executive-footer">
+    <footer class="executive-footer" role="contentinfo">
         <div class="footer-container">
             <div class="footer-text">
                 <p class="copyright gold">© 2026 MASUD BIN FARUK. ALL RIGHTS RESERVED.</p>
